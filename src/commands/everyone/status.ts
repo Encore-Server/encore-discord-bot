@@ -21,7 +21,20 @@ export const execute = async (interaction) => {
         });
         return interaction.reply({embeds: [statusEmbed]});
     }).catch((err) => {
-        return console.log(err);
+        console.log(err);
+        let statusEmbed = new EmbedBuilder()
+            .setTitle('Round Status')
+            .setTimestamp(new Date())
+            .setColor([128, 128, 0]);
+        const fields: any[] = [
+            { name: 'players', value: '0', inline: true },
+            { name: 'roundtime', value: 'N/A', inline: true },
+            { name: 'status', value: 'Offline', inline: true },
+            { name: 'admins', value: '0', inline: true },
+            { name: 'map_name', value: 'Domotan', inline: true },
+        ];
+        statusEmbed.addFields(fields);
+        return interaction.reply({embeds: [statusEmbed]});
     });
 
 }
