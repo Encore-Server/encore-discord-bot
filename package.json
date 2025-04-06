@@ -1,0 +1,39 @@
+{
+  "name": "encore-discord-bot",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "type": "commonjs",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [
+    "space",
+    "station",
+    "byond",
+    "discord",
+    "bot",
+    "encore"
+  ],
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.ts",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

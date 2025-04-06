@@ -1,0 +1,18 @@
+{
+    "token" : "",
+    "clientId" : "1358479068311457962",
+
+    "notifications" : {
+        "role" : ""
+    },
+
+    "byondTopic" : {
+        "host": "127.0.0.1",
+        "port" : 5000
+    },
+
+    "byondImport" : {
+        "enabled" : false,
+        "port" : 5001
+    }
+}
