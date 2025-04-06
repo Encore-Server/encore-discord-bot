@@ -18,7 +18,7 @@ export class BotClient {
       console.log(`Client ready logged in as ${this.client.user.tag} (${this.client.user.id}).`);
       //this.client.user.setAFK(true);
       this.client.user.setStatus('online');
-      this.client.user.setActivity({name: 'test', type: 0} as ActivityOptions);
+      this.client.user.setActivity({name: 'Domotan', type: 0} as ActivityOptions);
     };
   }
 
